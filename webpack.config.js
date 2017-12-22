@@ -4,28 +4,18 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: {
-    'style': './src/style.css',
+    'style': './src/style.styl',
   },
   output: {
     path: path.join(__dirname, './build/'),
     filename: '[name].css'
   },
   module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['es2015']
-        }
-      }
-    ],
     rules: [
       {
-        test: /\.css$/,
+        test: /\.styl$/,
         use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: 'css-loader'
+          use: 'css-loader!stylus-loader'
         })
       }
     ]
