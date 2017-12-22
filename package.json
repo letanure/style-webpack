@@ -1,0 +1,9 @@
+{
+  "name": "style-webpack",
+  "version": "1.0.0",
+  "description": "webpack building css only",
+  "main": "index.js",
+  "repository": "git@github.com:letanure/style-webpack.git",
+  "author": "Luiz Tanure <letanure@gmail.com>",
+  "license": "MIT"
+}
