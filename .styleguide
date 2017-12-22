@@ -1,0 +1,8 @@
+{
+  "sgComment": "SG",   
+  "srcFolder": "src",     
+  "outputFile": "build/styleguide/index.html",     
+  "fileExtensions": {
+    "styl": true
+  }
+}
